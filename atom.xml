@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://littleheuer.github.io</id>
     <title>FILTER</title>
-    <updated>2020-06-21T15:36:33.659Z</updated>
+    <updated>2020-06-21T15:47:49.856Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://littleheuer.github.io"/>
     <link rel="self" href="https://littleheuer.github.io/atom.xml"/>
-    <subtitle>南波万</subtitle>
+    <subtitle>南波兔</subtitle>
     <logo>https://littleheuer.github.io/images/avatar.png</logo>
     <icon>https://littleheuer.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, FILTER</rights>

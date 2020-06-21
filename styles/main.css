@@ -2112,12 +2112,12 @@ pre > span.copy-code:hover {
 body {
       background-color: #eee;
     }.header {
-        width: 1180px;
+        width: 960px;
         margin: 0 auto;
       }
 
       .main-continer {
-        width: 1180px;
+        width: 960px;
         margin: 0 auto;
       }
     
@@ -2196,7 +2196,14 @@ body {
       transition-property: all;
       transition-duration: 59s;
       transition-timing-function: cubic-bezier(.34,0,.84,1);
-    }.markdownIt-TOC a {
+    }.pisces .blog-header, .gemini .blog-header {
+        right: 0;
+      }
+      .pisces .section-layout-wrapper, .gemini .section-layout-wrapper {
+        flex-direction: row-reverse !important;
+      }.pisces .sidebar, .gemini .sidebar {
+        right: 0;
+      }.markdownIt-TOC a {
       color: #eee;
       border-bottom-color: #eee;
     }.markdownIt-TOC a:hover {
@@ -2243,6 +2250,8 @@ body {
     }
     .mist .site-title i {
       background: #FFFFFFfe;
+    }.box-shadow-wrapper {
+      padding: 10px;
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
