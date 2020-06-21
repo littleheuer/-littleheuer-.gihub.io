@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://qzr8xa.coding-pages.com</id>
     <title>FILTER</title>
-    <updated>2020-06-21T14:01:18.884Z</updated>
+    <updated>2020-06-21T14:13:34.996Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://qzr8xa.coding-pages.com"/>
     <link rel="self" href="http://qzr8xa.coding-pages.com/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>http://qzr8xa.coding-pages.com/images/avatar.png</logo>
     <icon>http://qzr8xa.coding-pages.com/favicon.ico</icon>
     <rights>All rights reserved 2020, FILTER</rights>
+    <entry>
+        <title type="html"><![CDATA[ C++基础]]></title>
+        <id>http://qzr8xa.coding-pages.com/post/f_R6lAxZI/</id>
+        <link href="http://qzr8xa.coding-pages.com/post/f_R6lAxZI/">
+        </link>
+        <updated>2020-06-21T14:05:03.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux复习 2019.04.06]]></title>
+        <id>http://qzr8xa.coding-pages.com/post/UCEzDh_KA/</id>
+        <link href="http://qzr8xa.coding-pages.com/post/UCEzDh_KA/">
+        </link>
+        <updated>2020-06-21T14:02:36.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[线程池的开发]]></title>
         <id>http://qzr8xa.coding-pages.com/post/xian-cheng-chi-de-kai-fa/</id>

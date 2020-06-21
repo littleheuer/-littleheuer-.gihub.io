@@ -9,7 +9,7 @@
 <meta name="description" content="南波万">
 <meta name="theme-color" content="#000">
 <title>今日刷题 | FILTER</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1592748059232">
+<link rel="shortcut icon" href="/favicon.ico?v=1592748806122">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -212,7 +212,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">4</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -1637,6 +1637,750 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="http://qzr8xa.coding-pages.com/post/f_R6lAxZI/"" data-c="
+          &lt;h3 id=&#34;0x0-学习方法&#34;&gt;0x0  学习方法&lt;/h3&gt;
+&lt;p&gt;按编程范式学习：面向过程编程，面向对象编程，泛型编程，面向函数编程.&lt;/p&gt;
+&lt;p&gt;学习（借鉴）=&amp;gt;总结（思考）=&amp;gt;假设（自己创造）=&amp;gt;验证（正确）&lt;/p&gt;
+&lt;h3 id=&#34;1-stl&#34;&gt;1. STL&lt;/h3&gt;
+&lt;h4 id=&#34;11-queue类&#34;&gt;1.1 queue类&lt;/h4&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748417691.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;12-string类&#34;&gt;1.2 string类&lt;/h4&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748443737.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;length() O(1),strlen O(n)&lt;/p&gt;
+&lt;h4 id=&#34;13-hash_map类非标准o1&#34;&gt;1.3 hash_map类（非标准）O(1)&lt;/h4&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748457280.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;14-unordered_map-类c11-标准非排序&#34;&gt;1.4 unordered_map 类（C++11 标准）非排序&lt;/h4&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748479384.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;15-map底层为红黑树&#34;&gt;1.5 map（底层为红黑树）&lt;/h4&gt;
+&lt;h4 id=&#34;16-set-底层为红黑树&#34;&gt;1.6 set （底层为红黑树）&lt;/h4&gt;
+&lt;h4 id=&#34;1-编程题训练&#34;&gt;1). 编程题训练：&lt;/h4&gt;
+&lt;h5 id=&#34;1hzoj245sort&#34;&gt;1.HZOJ245(sort)&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;使a数组中[l, r)内第k小的元素处在第k个位置上（相对于l）O（n）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;nth_element(a + l, a + k, a + r);//基于快速排序的快速选择
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;2hzoj166string中findrfindinsertnum-const-string&#34;&gt;2.HZOJ166（string中find，rfind，insert(num, const string)）&lt;/h5&gt;
+&lt;h3 id=&#34;2任意类型&#34;&gt;2.任意类型&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;template&amp;lt;typename T&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;hzoj-256noip2012国王游戏高精度贪心&#34;&gt;HZOJ -256（NOIP2012）国王游戏『高精度，贪心』&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;可以用微扰（邻项交换）的方式证明，最后的排序是按每个人的左右手乘积排序，最后算出来得金币数最大的数字。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;要用到BigInt大整数类&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3类和对象基础&#34;&gt;3.类和对象基础&lt;/h3&gt;
+&lt;h4 id=&#34;31-类与对象&#34;&gt;3.1 类与对象&lt;/h4&gt;
+&lt;p&gt;类型 = 类型数据+类型操作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;类（class，struct）：用户定义类型，又称类类型。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对象：类的实例，又可以说类类型的变量。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;32-成员属性与方法&#34;&gt;3.2 成员属性与方法&lt;/h4&gt;
+&lt;p&gt;类的访问权限：public，protected，private。&lt;/p&gt;
+&lt;p&gt;class默认是私有权限，struct默认是公共权限。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;this指针&lt;/strong&gt;：是一个成员函数的隐含指针，指向当前调用成员函数的对象，而不是类！而成员函数被调用后，this指针就初始化为对象的地址。&lt;strong&gt;实际上是成员方法的隐藏参数！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class A {
+	...
+	void set() {
+		this-&amp;gt;a;
+	}
+	...
+		int a;
+};
+A obj;
+obj.set();//this指针此时指向obj这个对象
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;33-构造函数和析构函数&#34;&gt;3.3 构造函数和析构函数&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;构造函数类型&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;默认构造函数：在定义对象时，会自动调用默认构造函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;带参构造函数：重载，根据参数来匹配调用。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;转换构造函数：只有一个参数的构造函数。在赋值、函数传参等等时可调用转换函数隐式地进行转换。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;拷贝构造函数：同类型的赋值行为。“=”与拷贝构造函数不等价，在没有重载=时，是调用拷贝构造函数的，一旦重载之后，就是调用重载函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;“&amp;amp;” 引用不调用拷贝构造函数。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;问题：为什么拷贝构造函数一定要传引用？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;答：因为对象之间拷贝时，若不是引用，那么调用拷贝构造函数实参传形参时，形参又会调用拷贝构造函数，无限递归下去，若是引用，就不会引起拷贝。且编译器都不会通过编译。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;析构函数&lt;/strong&gt;：不带任何参数。在类对象作用域结束时系统自动调用，或者delete运算会自动调用析构函数。（new运算符则调用构造函数）&lt;/p&gt;
+&lt;p&gt;构造顺序和析构顺序相反。&lt;/p&gt;
+&lt;p&gt;构造函数后显示性的写出构造函数的默认构造函数，以及删除某些构造函数，以满足某些需求：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;= default&lt;/li&gt;
+&lt;li&gt;= delete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class A {
+	A() = default;
+	A(const A &amp;amp;) = delete;
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;三五法则：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;需要析构函数的类（new创建额外的存储空间时，需要析构函数），一定需要拷贝构造函数（深拷贝）和拷贝赋值函数。&lt;/li&gt;
+&lt;li&gt;将类的析构函数删除时，将不允许定义局部变量。&lt;/li&gt;
+&lt;li&gt;若以一个类中有const或引用成员时，则不能使用合成的拷贝赋值操作。初始化列表中才是成员属性的初始化，而在构造函数里并不是调用成员属性初始化。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;34-类属性静态属性与类方法静态方法&#34;&gt;3.4 类属性（静态属性）与类方法（静态方法）&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;成员属性，成员方法：每个对象都有一个不同的成员属性和方法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;类属性：同类对象的共享机制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;类方法：没有this指针，类方法只能访问类属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;访问方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;通过命名空间访问&lt;/li&gt;
+&lt;li&gt;通过对象名访问&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//声明
+class Man{
+	...
+    //声明一个静态属性
+	static int total_cnt;
+    int cnt;
+	static void say();
+};
+//定义静态属性：（必要的）
+Man::total_cnt = 10;
+//命名空间
+Man::say();
+Man x;//此时Man类的cnt被定义了
+//对象名
+x.total_cnt;
+x.say();
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;35-const方法&#34;&gt;3.5 const方法&lt;/h4&gt;
+&lt;p&gt;const方法 不会修改任何成员属性的值。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作用：配合const对象使用，使常量对象可以访问成员函数（即定义为const的方法）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;string name() const{
+	...;
+}  
+const SomeClass a;
+cout &amp;lt;&amp;lt; a.name() &amp;lt;&amp;lt; endl;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;若不定义const类型的方法，则const类型的对象什么都做不了，即使方法不会改变成员属性。&lt;/p&gt;
+&lt;h4 id=&#34;36-mutable关键字&#34;&gt;3.6 mutable关键字&lt;/h4&gt;
+&lt;p&gt;在C++中，mutable 是为了突破 const 的限制而设置的。可以用来修饰一个类的成员变量。被 mutable 修饰的变量，将永远处于可变的状态，即使是 const 函数中也可以改变这个变量的值。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class Test
+{
+public:
+    Test();
+    int value() const;
+
+private:
+    mutable int v;
+};
+Test::Test()
+{
+    v = 1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;37-对象与引用&#34;&gt;3.7 对象与引用&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;引用：相当于别名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;SomeClass a;
+SomeClass &amp;amp;b = a;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;38-初始化列表&#34;&gt;3.8 初始化列表&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//构造函数组成：
+//参数部分+初始化列表+函数逻辑
+Point::Point() x_cnt(0) {
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;初始化列表相当于在调用成员属性的构造函数，如：&lt;/p&gt;
+&lt;p&gt;x_cnt为整型，则初始化列表在调用整形对象的拷贝构造函数。&lt;/p&gt;
+&lt;h3 id=&#34;4-运算符重载&#34;&gt;4.  运算符重载&lt;/h3&gt;
+&lt;p&gt;实现重载的形式：1.在类里重载成为成员方法2.在类外面重载,写成函数的形式，用友元函数访问私有变量。&lt;/p&gt;
+&lt;p&gt;c++返回值优化&lt;/p&gt;
+&lt;h4 id=&#34;41-友元函数&#34;&gt;4.1 友元函数&lt;/h4&gt;
+&lt;p&gt;可以让类外定义的函数能访问类的私有变量，关键字friend。在运算符重载时，若运算符需要的左操作数不是类本身时，就需要用友元函数定义，如&amp;lt;&amp;lt;, &amp;gt;&amp;gt;。&lt;/p&gt;
+&lt;!-- 不可用友元函数重载的运算符有：=，()，[]，-&gt;  --&gt;
+&lt;p&gt;函数对象：eg：a(20)，可能不是函数，而是（）运算符实现了重载，此时称为函数对象。&lt;/p&gt;
+&lt;p&gt;左值(lvalue)，右值(rvalue)：左值代表在一个内存中占有确定的位置，即有一个确定的地址，而右值就是非左值的表达式，如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;int var;
+var = 4;
+4 = var; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;第二个赋值错误，因为4为临时变量属于右值，var为左值。&lt;/p&gt;
+&lt;h4 id=&#34;42-类类型转换&#34;&gt;4.2 类类型转换&lt;/h4&gt;
+&lt;h5 id=&#34;421-构造函数进行类类型转换&#34;&gt;4.2.1 构造函数进行类类型转换&lt;/h5&gt;
+&lt;p&gt;基本类型，类类型==&amp;gt;类类型&lt;/p&gt;
+&lt;p&gt;隐式调用：转换出现在算术运算，赋值运算，函数参数传递中。&lt;/p&gt;
+&lt;p&gt;​	调用函数时，若实参与形参不匹配，会隐式调用构造函数，用实参建立临时对象。如：若是整数常量则会转换为类类型常量。&lt;/p&gt;
+&lt;h5 id=&#34;422-类型转换函数&#34;&gt;4.2.2 类型转换函数&lt;/h5&gt;
+&lt;p&gt;类类型==&amp;gt;基本类型，类类型，复合类型。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class Cal {
+	public :
+		operator int();
+	private :
+		unsigned int val;
+};
+Cal::operator int() {
+	int a;
+	a = val;
+	return a;
+}
+
+//显式调用
+int(count);
+count.operator int();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;5虚函数&#34;&gt;5.虚函数&lt;/h3&gt;
+&lt;p&gt;作用：在父类指针指向子类对象时，若不定义成虚函数，则指针会指向父类函数的实现，并不会调用子类对象的函数；若在父类中定义为虚函数，那么父类指针就可以不用通过类型转换就可以指向子类对象的属性和方法，但仅限于继承的属性和方法。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;问题：为什么要将析构函数定义为虚函数？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;因为若不定义为虚析函数，基类指针建立派生类动态对象时（new），delete会调用基类的析构对象，不能释放派生类对象自身定义占有的资源。&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class Animal {
+public:
+	virtual ~Animal(){}
+};
+class Cat : public Animal {
+public:
+	~Cat(){}
+};
+Animal *p = new Cat;
+delete p;
+p = NULL;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;纯虚函数：属于接口类，基类只定义了函数，并未实现，但派生类中必须实现。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//父类：
+//虚函数
+virtual void run(){}
+//纯虚函数，没有任何实现
+virtual void say() = 0;
+
+//派生类：
+void run() override {
+    ...
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;override：更加明确的告诉编译器是虚函数的实现，假如子类的实现函数与父类虚函数名不一样，则会在编译器中报错，使其更加严谨。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;虚继承：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;非虚继承：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class A {
+public :
+    int a;
+};
+class B1 : public A {
+
+};
+class B2 : public A {
+
+};
+class C : public B1, public B2 {
+
+};
+
+C obj;
+obj.a = 5;//编译器报错
+obj.B1::a = 5;//no error
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;非虚继承的类格：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://static.dingtalk.com/media/lADPGo_k5tbNNQDNAgXNAxE_785_517.jpg_620x10000q90g.jpg?auth_bizType=IM&amp;amp;auth_bizEntity=%7B%22cid%22%3A%224248001%3A532940932%22%2C%22msgId%22%3A%222826817351429%22%7D&amp;amp;bizType=im&amp;amp;open_id=532940932&#34; alt=&#34;图片&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;C类对象的成员在内存的安排：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://static.dingtalk.com/media/lADPGo_k5tbNNQTNAi7NAoA_640_558.jpg_620x10000q90g.jpg?auth_bizType=IM&amp;amp;auth_bizEntity=%7B%22cid%22%3A%224248001%3A532940932%22%2C%22msgId%22%3A%222821072529874%22%7D&amp;amp;bizType=im&amp;amp;open_id=532940932&#34; alt=&#34;图片&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;虚继承：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;避免菱形继承的二义性（即不知道C类对象引用A类成员时，指的是B1继承过来的还是B2继承过来的），此时的公共基类定义为虚基类&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class A {
+public :	
+    int a;
+};
+class B1 : virtual public A {
+
+};
+class B2 : virtual public A {
+
+};
+class C : public B1 ,public B2{
+
+};
+
+C obj;
+obj.a = 5;//无二义性
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;虚继承的类格：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://static.dingtalk.com/media/lADPGpNyZXvyvGrNAj_NAnM_627_575.jpg_620x10000q90g.jpg?auth_bizType=IM&amp;amp;auth_bizEntity=%7B%22cid%22%3A%224248001%3A532940932%22%2C%22msgId%22%3A%222820320073528%22%7D&amp;amp;bizType=im&amp;amp;open_id=532940932&#34; alt=&#34;图片&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;虚继承C类对象的数据成员：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;8&#34;&gt;&lt;img src=&#34;https://static.dingtalk.com/media/lADPGoxXaDJlvG_NArfNArc_695_695.jpg_620x10000q90g.jpg?auth_bizType=IM&amp;amp;auth_bizEntity=%7B%22cid%22%3A%224248001%3A532940932%22%2C%22msgId%22%3A%222817041593630%22%7D&amp;amp;bizType=im&amp;amp;open_id=532940932&#34; alt=&#34;图片&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;虚继承有多种实现方式：&lt;/p&gt;
+&lt;p&gt;虚函数表：每个对象头部存在一个虚函数表的首地址，且占用一定的存储空间(8bit)。每个对象都指向同一个类的虚函数表，虚函数表存储虚函数的地址。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;9&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748687986.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;final关键字：&lt;/p&gt;
+&lt;p&gt;1.禁用继承&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​     C++11中允许将类标记为final，方法时直接在类名称后面使用关键字final，如此，意味着继承该类会导致编译错误。&lt;/p&gt;
+&lt;p&gt;对类进行标记：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class Super final {
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;​		2.禁用重写&lt;/p&gt;
+&lt;p&gt;​	 C++中还允许将方法标记为final，这意味着无法再子类中重写该方法。这时final关键字至于方法参数列表后面，如下&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class Super
+{
+  public:
+    Supe();
+    virtual void SomeMethod() final;
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;函数指针&lt;/p&gt;
+&lt;h3 id=&#34;6模板泛型编程思想&#34;&gt;6.模板（泛型编程思想）&lt;/h3&gt;
+&lt;p&gt;泛型编程：用模板实现函数过程和类。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//抽象数据类型定义：
+template&amp;lt;typename T&amp;gt;
+//模板函数
+T add(T a, T b) {
+	return a + b;
+}
+//模板类
+struct Print {
+    Print(std::ostream &amp;amp;out) : out (out) {}
+    void operator&amp;lt;&amp;lt;(T a) {
+        
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;![2020-02-28 16-45-02 的屏幕截图](/img/2020-02-28 16-45-02 的屏幕截图.png)&lt;/p&gt;
+&lt;h4 id=&#34;61模板特化&#34;&gt;6.1模板特化&lt;/h4&gt;
+&lt;p&gt;函数特化：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;10&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748706595.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;模板类特化：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;11&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748726534.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;模板的偏特化：对模板函数的补充，仍然是模板函数&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;12&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748740539.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;可变参数函数模板：&lt;/p&gt;
+&lt;p&gt;递归调用，直到最后调用到只有一个参数的偏特化模板&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;13&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748757197.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;可变参数类模板：&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;14&#34;&gt;&lt;img src=&#34;http://qzr8xa.coding-pages.com/post-images/1592748771890.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;...ARGS为变参类&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//隐式调用
+add(2.3, 4.5);
+//显式调用
+add&amp;lt;double&amp;gt;(2.3, 4);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;62-模板中的重要知识&#34;&gt;6.2 模板中的重要知识&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;decltype关键字：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//decltype 调用了T，U的默认构造函数
+template&amp;lt;typename T, typename U&amp;gt;
+decltype(T(), U()) add(T a, U b) {
+	return a + b;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;返回值后置 ：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;auto func(int a) -&amp;gt; int{ 
+	return 2 * x;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;struct A {
+	A() = delete;
+	A(int x) : x(x) {
+
+	}
+	int operator+(int x) {
+		return x + this-&amp;gt;x + 0.00001;
+	}
+	int x;
+};
+
+//不用调用默认构造函数，直接使用对象的加法返回值判定类型
+template&amp;lt;typename T, typename U&amp;gt;
+auto add(T a, U b) -&amp;gt; decltype(a + b) {
+	return a + b;
+}
+//偏特化版本，传指针时
+template&amp;lt;typename T, typename U&amp;gt;
+auto add(T *a, U *b) -&amp;gt;decltype(add(*a, *b)) {
+	return add(*a, *b);
+}
+int main() {
+	A d(6);
+	cout &amp;lt;&amp;lt; add(d, 4) &amp;lt;&amp;lt; endl;
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;引用折叠&lt;/p&gt;
+&lt;p&gt;c++函数对象指针：function&amp;lt;...&amp;gt; ，可指向任意可调用对象。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;function&amp;lt;void(void(int &amp;amp;, int &amp;amp;))&amp;gt; p
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;-模板的图灵完备性&#34;&gt;- 模板的图灵完备性：&lt;/h5&gt;
+&lt;h3 id=&#34;7知识补充&#34;&gt;7.知识补充&lt;/h3&gt;
+&lt;h4 id=&#34;-auto关键字&#34;&gt;- auto关键字：&lt;/h4&gt;
+&lt;p&gt;自动存储期变量：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;auto int a;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;c++11中加入了个功能：省略类型，让编译器自动确定类型，但此类型必须在编译时可以确定，且是基础类型（指针、整型、浮点型等），不可定义为数组。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;long long a = 123;
+auto b = a;
+
+auto b[100] = {0};//不可定义数组
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;-constexpr关键字&#34;&gt;- constexpr关键字：&lt;/h4&gt;
+&lt;p&gt;const：所修饰变量不可修改，属于运行期常量。&lt;/p&gt;
+&lt;p&gt;体现在：&lt;/p&gt;
+&lt;p&gt;constexpr：编译器常量。1、必须在编译期确定常量。2、可在编译期计算常量的表达式，但所有相关变量都是编译期常量，函数也可返回编译期常量。2、修饰构造函数时，说明可以构造一个编译期常量对象。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;constexpr int f(int i) {
+	return 2 * i;
+}
+
+struct A {
+	constexpr A(int x, int y) : x(x), y(y){}
+	int x, y;
+};
+
+int main() {
+	//所修饰的变量是不可修改的
+	int n;
+	cin &amp;gt;&amp;gt; n;
+    //没有错误
+	const int a = n + 3;
+	constexpr int b = f(123) + 567;
+	cout &amp;lt;&amp;lt; f(n) &amp;lt;&amp;lt; endl;
+	constexpr A a(2, 3);
+	return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;-null在c中和c中的区别&#34;&gt;- null在c中和c++中的区别&lt;/h4&gt;
+&lt;p&gt;c中，null为0或者空地址(void*)0，而c++中是将null定义为0，nullptr定义空地址，从而避免类型冲突。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//c++
+void f(int x) {
+	cout &amp;lt;&amp;lt; x &amp;lt;&amp;lt; endl;
+	return ;
+}
+
+void f(int *p) {
+	cout &amp;lt;&amp;lt; p &amp;lt;&amp;lt; endl;
+	return ;
+}
+int main() {
+	int n = 123;
+	f(n);
+	f(&amp;amp;n);
+	f(nullptr);
+	return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;-左值右值c11一种值&#34;&gt;- 左值，右值（c++11）：一种值&lt;/h4&gt;
+&lt;p&gt;能访问到的叫左值，不能访问到的叫右值：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;int n = 123;
+(++n);//左值
+(n++);//右值
+
+cout &amp;lt;&amp;lt; (++n)++ &amp;lt;&amp;lt; endl;//no error
+cout &amp;lt;&amp;lt; (n++)++ &amp;lt;&amp;lt; endl;//error
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以理解为左值是变量，右值是一个临时常量。&lt;/p&gt;
+&lt;p&gt;左值引用，右值引用：一种别名&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include&amp;lt;iostream&amp;gt;
+using namespace std;
+
+//左值引用
+//相当于：int &amp;amp;a = b;
+void f(int &amp;amp;a) {
+	cout &amp;lt;&amp;lt; &amp;quot;lvalue&amp;quot; &amp;lt;&amp;lt; endl;
+}
+
+//右值引用
+void f(int &amp;amp;&amp;amp;a) {
+	cout &amp;lt;&amp;lt; &amp;quot;rvalue&amp;quot; &amp;lt;&amp;lt; endl;
+}
+
+int main() {
+	int n = 123;
+	f(n++);
+	f(++n);
+	return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;move强制变右值，forward变为任意值，实现了c++中完美传值的过程。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include&amp;lt;iostream&amp;gt;
+using namespace std;
+void f2(int &amp;amp;a) {
+	cout &amp;lt;&amp;lt; &amp;quot;lvalue&amp;quot; &amp;lt;&amp;lt; endl;
+}
+
+//右值引用
+void f2(int &amp;amp;&amp;amp;a) {
+	cout &amp;lt;&amp;lt; &amp;quot;rvalue&amp;quot; &amp;lt;&amp;lt; endl;
+}
+
+//左值引用
+void f(int &amp;amp;a) {
+	cout &amp;lt;&amp;lt; &amp;quot;lvalue&amp;quot; &amp;lt;&amp;lt; endl;
+    //传值时仍然为左值
+	f2(forward&amp;lt;int &amp;amp;&amp;gt;(a));
+}
+
+//右值引用
+void f(int &amp;amp;&amp;amp;a) {
+	cout &amp;lt;&amp;lt; &amp;quot;rvalue&amp;quot; &amp;lt;&amp;lt; endl;
+    //传值时仍然为右值
+	f2(forward&amp;lt;int &amp;amp;&amp;amp;&amp;gt; (a));
+}
+
+int main() {
+	int n = 123;
+	f(n++);
+	f(++n);
+	return 0;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;c++11开始引入左值和右值后，通过移动构造函数，提高了效率：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;class A {
+public:
+    ...
+//左值拷贝构造O(n)
+	A(const A &amp;amp;obj) : n(obj.n) {
+		cout &amp;lt;&amp;lt; &amp;quot;cp constructor&amp;quot; &amp;lt;&amp;lt; endl;
+		this-&amp;gt;arr = new int[this-&amp;gt;n];
+		for(int i = 0; i &amp;lt; this-&amp;gt;n; i++) {
+			this-&amp;gt;arr[i] = obj.arr[i];
+		}
+	}
+	//移动构造O(1)
+	A(A &amp;amp;&amp;amp;obj) {
+		cout &amp;lt;&amp;lt; &amp;quot;move constructor&amp;quot; &amp;lt;&amp;lt; endl;
+		this-&amp;gt;n = obj.n;
+		this-&amp;gt;arr = obj.arr;
+		obj.arr = nullptr;
+	}
+    ...
+};
+
+	A *p = new A();
+	//调用移动构造函数之后，p指向空地址，x直接指向p原来开辟的空间，时间复杂度为O(1)，比原来的左值构造函数快的多。
+	A x = move(*p);
+	delete p;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;-typename和class关键字的区别&#34;&gt;- typename和class关键字的区别：&lt;/h4&gt;
+&lt;p&gt;在模板定义语法中关键字class与typename的作用完全一样。&lt;/p&gt;
+&lt;p&gt;typename另外一个作用为：使用嵌套依赖类型(nested depended name)。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;struct  A {
+    typedef int type;
+};
+int main() {
+    typename A::type a;
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这个时候typename的作用就是告诉c++编译器，typename后面的字符串为一个类型名称，而不是成员函数或者成员变量，&lt;br&gt;
+这个时候如果前面没有typename，编译器没有任何办法知道T::LengthType是一个类型还是一个成员名称(静态数据成员或者静态函数)，所以编译不能够通过。&lt;/p&gt;
+&lt;p&gt;二叉排序树的模板，支持：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;插入&lt;/li&gt;
+&lt;li&gt;删除&lt;/li&gt;
+&lt;li&gt;查找&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;-bind&#34;&gt;-bind&lt;/h5&gt;
+&lt;p&gt;改变函数的相关调用形式。&lt;/p&gt;
+&lt;p&gt;lambda&lt;/p&gt;
+"> C++基础</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="http://qzr8xa.coding-pages.com/post/UCEzDh_KA/"" data-c="
+          &lt;h2 id=&#34;一-linux命令&#34;&gt;一 、Linux命令&lt;/h2&gt;
+&lt;p&gt;1、ls :&lt;/p&gt;
+&lt;p&gt;ls -l : 文件类型(7种) 权限(所有者，组，其他人) 连接数(软链接(ln -s类似于win快捷方式)、硬链接 (ln))。&lt;br&gt;
+ls -ai : inode 索引节点 : 存放档案及目录的基本信息，包含时间、档名、使用者及群组。 block ：存放文件内容信息，可找到文件存储位置。&lt;/p&gt;
+&lt;p&gt;2、cd&lt;/p&gt;
+&lt;p&gt;3、cp ：&lt;br&gt;
+第三个参数为目录，用来把复制的文件放在指定目录里，scp也是。&lt;br&gt;
+-a&lt;br&gt;
+-u&lt;/p&gt;
+&lt;p&gt;4、rm ：&lt;br&gt;
+-i&lt;br&gt;
+-r&lt;br&gt;
+-f&lt;/p&gt;
+&lt;p&gt;5、mkdir&lt;br&gt;
+-p 为给出的目录建立未创建的目录&lt;br&gt;
+-m 只改变最后一个目录权限，其它缺省模式建立新目录。(umask补码：为文件设置默认权限eg：文件默认为777，umask为0002，则修改后的文件缺省权限为775。目录默认为664)&lt;/p&gt;
+&lt;p&gt;6、touch(修改文件时间，创建空白文件)&lt;/p&gt;
+&lt;p&gt;7、.vimrc配置vim文件&lt;/p&gt;
+&lt;p&gt;8、/etc 所有配置文件 ：&lt;br&gt;
+/etc/network : 配置网络。shell命令：service networking option(操作如stop，start，reload)&lt;br&gt;
+/etc/bash.bashrc  配置bash(全局配置)&lt;br&gt;
+~/.bashrc 某个用户的bash配置&lt;br&gt;
+/etc/profile : 为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置。&lt;br&gt;
+~/.profile 单个用户&lt;br&gt;
+执行顺序 : /etc/bash.bashrc /etc/profile ~/.bashrc&lt;/p&gt;
+&lt;p&gt;9、free 显示   系统中   已用和未用的   物理内存和交换内存,共享内存和内核使用的缓冲区的总和。&lt;br&gt;
+10、ps&lt;br&gt;
+-ef&lt;br&gt;
+aux&lt;br&gt;
+11、top&lt;br&gt;
+12、netstat&lt;br&gt;
+-alnt&lt;br&gt;
+13、du fdisk：&lt;br&gt;
+eg : du -h -d 0&lt;br&gt;
+14、test：&lt;br&gt;
+-f 返回真值，查找&lt;br&gt;
+15、chown，chmod&lt;/p&gt;
+&lt;h2 id=&#34;二-terminal&#34;&gt;二、Terminal&lt;/h2&gt;
+&lt;p&gt;shell-&amp;gt;bash&lt;br&gt;
+bash：&lt;br&gt;
+内置命令(eg:cd)&lt;br&gt;
+系统调用:(eg:ls)&lt;br&gt;
+通配符: *(多个) ?(单个) [a-z] [A-Z]&lt;br&gt;
+shell脚本里只有{}作为通配符符号:&lt;br&gt;
+&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;[&lt;/mo&gt;&lt;mo&gt;]&lt;/mo&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;整&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;数&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;计&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;算&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;[] 整数计算
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;整&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;数&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;计&lt;/span&gt;&lt;span class=&#34;mord cjk_fallback&#34;&gt;算&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;() 命令替换 = ``&lt;br&gt;
+三、 安装软件&lt;br&gt;
+1、apt-get:&lt;br&gt;
+--purge&lt;br&gt;
+update:源列表更新&lt;br&gt;
+upgrade&lt;br&gt;
+install：在本地查看源列表信息(源所在配置文件:/etc/apt/sources.list.d/)。用来安装和更新软件&lt;br&gt;
+remove&lt;br&gt;
+check&lt;/p&gt;
+&lt;p&gt;2、dpkg&lt;br&gt;
+-i ：安装发布的deb包&lt;br&gt;
+-s appname ：查找某个软件&lt;br&gt;
+3、apt-cache search 查找某个软件&lt;/p&gt;
+&lt;h2 id=&#34;三-shell脚本&#34;&gt;三、shell脚本&lt;/h2&gt;
+&lt;p&gt;1、输出信息重定向到回收站: &amp;gt;&amp;amp;1&amp;gt;/dev/null&lt;/p&gt;
+&lt;p&gt;2、awk：&lt;br&gt;
+-F&lt;br&gt;
+eg：awk &#39;BEGIN{echo &amp;quot;Hello&amp;quot;} {} END{}&#39;&lt;br&gt;
+3、grep：&lt;br&gt;
+-v&lt;br&gt;
+-w&lt;br&gt;
+4、sed:&lt;br&gt;
+eg: sed &#39;s/.../g&#39; filename&lt;br&gt;
+-e : 只输出不更改原文件&lt;br&gt;
+-i : 更改文件&lt;br&gt;
+g ：global全局替换&lt;br&gt;
+s : 某一行或者某行&lt;br&gt;
+sed &#39;s/regex/replace/&#39; filename replace all&lt;br&gt;
+sed &#39;/line_pattern/s/find/replace/&#39; filename replace only on lines matching&lt;/p&gt;
+&lt;h3 id=&#34;数据提取和切分&#34;&gt;数据提取和切分：&lt;/h3&gt;
+&lt;p&gt;5、last head tail&lt;br&gt;
+6、tr 替换&lt;br&gt;
+7、sort&lt;br&gt;
+8、wc&lt;br&gt;
+9、cat&lt;br&gt;
+-l：计数&lt;br&gt;
+10、cut&lt;br&gt;
+11、uniq&lt;br&gt;
+-c：标列号&lt;br&gt;
+12、xargs&lt;br&gt;
+13、split&lt;br&gt;
+14、pstree&lt;br&gt;
+15、uuid查看 ：blkid&lt;/p&gt;
+&lt;p&gt;##　四、其他操作&lt;/p&gt;
+&lt;p&gt;１、加载配置文件：source 或 .&lt;br&gt;
+２、数组:&lt;br&gt;
+declare 声明&lt;br&gt;
+#a[&lt;em&gt;] 求长度&lt;br&gt;
+a[&lt;/em&gt;] 空格输出数组&lt;br&gt;
+eval : Execute arguments as a single command in the current shell and return its result.&lt;br&gt;
+3、bc 判断浮点数&lt;br&gt;
+-l : Define the standard math library.&lt;br&gt;
+4、输入输出：read，echo&lt;/p&gt;
+&lt;p&gt;五、系统编程&lt;br&gt;
+1、fork()&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;unistd.h&amp;gt;
+
+int main () {
+    int a = 1;
+    printf(&amp;quot;%d\n&amp;quot;, a);
+    //fflush(stdout);
+    int pid = fork();
+    if(pid == 0) {
+        printf(&amp;quot;%d\n&amp;quot;, a + 1);
+    } else {
+        printf(&amp;quot;%d\n&amp;quot;, a + 2);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这种情况可能输出1 2 1 3&lt;br&gt;
+原因是缓冲区没有清除，得加上一个fflush(stdout)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;unistd.h&amp;gt;
+#include&amp;lt;sys/wait.h&amp;gt;
+#include&amp;lt;sys/types.h&amp;gt;
+
+int main () {
+    int a = 1;
+    printf(&amp;quot;%d\n&amp;quot;, a);
+
+    int pid = fork();
+    if(pid == 0) {
+        printf(&amp;quot;%d\n&amp;quot;, ++a);
+    } else {
+        int status;
+        wait(&amp;amp;status);
+        printf(&amp;quot;%d\n&amp;quot;, a + 2);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;wait等待子进程退出&lt;/p&gt;
+&lt;p&gt;2、pthread&lt;br&gt;
+pthread_create()&lt;br&gt;
+pthread_join()&lt;br&gt;
+互斥锁 :&lt;br&gt;
+pthread_mutex_t a_t;&lt;br&gt;
+pthead_mutex_lock(&amp;amp;a_t);&lt;br&gt;
+pthread_mutex_unlock(&amp;amp;a_t);&lt;/p&gt;
+&lt;p&gt;3、进程间通信(IPC):&lt;br&gt;
+(1)共享内存:&lt;br&gt;
+int shmget(key_t key, sizse_t size, int shmflg);&lt;br&gt;
+返回值：共享内存段与key关联&lt;br&gt;
+shmat(int shmid, const void *shmaddr, itn shmflg);&lt;br&gt;
+ftok&lt;br&gt;
+大题：2 系统编程、1 shell脚本、数据操作、实际操作。&lt;/p&gt;
+">Linux复习 2019.04.06</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="http://qzr8xa.coding-pages.com/post/xian-cheng-chi-de-kai-fa/"" data-c="
