@@ -9,7 +9,7 @@
 <meta name="description" content="南波兔">
 <meta name="theme-color" content="#000">
 <title>FILTER</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1618388429711">
+<link rel="shortcut icon" href="/favicon.ico?v=1618388896999">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -607,8 +607,24 @@
 &lt;p&gt;边缘网络：数据在边缘网络处理。由终端设备（移动手机、智能物品）、边缘设备（边界路由器、机顶盒、网桥、基站、无人接入点）、边缘服务器等构成。&lt;/p&gt;
 &lt;h5 id=&#34;大数据计算&#34;&gt;大数据计算&lt;/h5&gt;
 &lt;p&gt;概念：指利用分布式计算技术对海量数据进行在线/离线的实时性或批处理分析计算。&lt;/p&gt;
-&lt;p&gt;主要模式：基于MapReduce的批处理计算、流式计算、基于Spark的内存计算&lt;/p&gt;
-">《云计算、大数据理论及其应用》PPT阅读--绪论</a>
+&lt;p&gt;主要模式：基于MapReduce的批处理计算、流式计算、基于Spark的内存计算&lt;br&gt;
+&lt;strong&gt;MapReudce：&lt;/strong&gt;&lt;br&gt;
+&lt;img src=&#34;https://littleheuer.github.io/post-images/1618388695137.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+自动分割要执行的问题，拆成Map和reduce两个函数操作。对分块数据采用分治法的并行处理方式分析计算数据。&lt;/p&gt;
+&lt;p&gt;分布式存储使用HDFS。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;流式计算：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://littleheuer.github.io/post-images/1618388726295.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+注重数据处理的实时性。&lt;br&gt;
+&lt;strong&gt;基于Spark的内存计算：&lt;/strong&gt;&lt;br&gt;
+&lt;img src=&#34;https://littleheuer.github.io/post-images/1618388818678.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+Spark使用内存替代HDFS存储中间结果。再需要多次迭代大数据计算的应用中性能提升很多。&lt;/p&gt;
+&lt;h5 id=&#34;分布式系统的cap定理&#34;&gt;分布式系统的CAP定理&lt;/h5&gt;
+&lt;p&gt;对于分布式系统，不可能同时满足三点：&lt;/p&gt;
+&lt;p&gt;一致性consistency：分布式系统中所有数据备份在同一时刻是否相同。&lt;/p&gt;
+&lt;p&gt;可用性availablity：对数据跟更新具备高可用性，集群中部分节点故障后，集群整体还能响应客户端的读写请求。意思是只要收到用户的请求，服务器就必须给出回应。&lt;/p&gt;
+&lt;p&gt;分区容错性partition tolerance：当分布式系统集群中的某些节点无法联系时仍能正常提供服务。&lt;br&gt;
+&lt;img src=&#34;https://littleheuer.github.io/post-images/1618388837048.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">《云计算、大数据理论及其应用》PPT阅读--1.绪论</a>
       </div>
       
       <div class="item">
