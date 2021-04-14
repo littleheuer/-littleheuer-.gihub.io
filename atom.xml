@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://littleheuer.github.io</id>
     <title>FILTER</title>
-    <updated>2021-04-14T08:06:58.519Z</updated>
+    <updated>2021-04-14T08:16:11.613Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://littleheuer.github.io"/>
     <link rel="self" href="https://littleheuer.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://littleheuer.github.io/images/avatar.png</logo>
     <icon>https://littleheuer.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, FILTER</rights>
+    <entry>
+        <title type="html"><![CDATA[《云计算、大数据理论及其应用》PPT阅读--绪论]]></title>
+        <id>https://littleheuer.github.io/post/n2GCsAx8g/</id>
+        <link href="https://littleheuer.github.io/post/n2GCsAx8g/">
+        </link>
+        <updated>2021-04-14T08:13:16.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ C++基础]]></title>
         <id>https://littleheuer.github.io/post/f_R6lAxZI/</id>
